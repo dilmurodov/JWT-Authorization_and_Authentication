@@ -1,0 +1,42 @@
+#Registration
+POST http://127.0.0.1:4000/api/v1/registration
+Content-Type: application/json
+
+{
+    "password": "1233434",
+    "email": "golibbek@gmail.com"
+}
+
+###
+# Login
+POST http://127.0.0.1:4000/api/v1/login
+Content-Type: application/json
+
+{
+    "password": "1233434",
+    "email": "golibbek@gmail.com"
+}
+
+###
+# Logout
+POST http://127.0.0.1:4000/api/v1/logout
+Content-Type: application/json
+
+{
+    "password": "1233434",
+    "email": "golibbek@gmail.com"
+}
+
+###
+
+# Refresh
+
+GET http://127.0.0.1:4000/api/v1/refresh
+Set-Cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdvbGliQGdtYWlsLmNvbSIsImlkIjoiNjI4ZjE0ODY1YmYxNDg2OGE4YTFjY2E0IiwiaXNBY3RpdmF0ZWQiOmZhbHNlLCJpYXQiOjE2NTM1NDQwNzEsImV4cCI6MTY1NjEzNjA3MX0.ovwaE7DPmoyUtCPb_ttFPuMp9pBNcwBIHE2k_nDXhY4
+
+###
+
+# GET USERS
+
+GET http://127.0.0.1:4000/api/v1/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdvbGliQGdtYWlsLmNvbSIsImlkIjoiNjI4ZjE0ODY1YmYxNDg2OGE4YTFjY2E0IiwiaXNBY3RpdmF0ZWQiOmZhbHNlLCJpYXQiOjE2NTM1NDQwNzEsImV4cCI6MTY1MzU0NDA4MX0.w01z6VTyqA_SRO2S3Fo4A9K2nyeVG0hgAV9jY4-ObmQ
